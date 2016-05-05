@@ -1,0 +1,39 @@
+<ion-pane>
+  <ion-header-bar class="bar-stable">
+    <h1 class="title">Forecast {{(vm.forecast.dt * 1000) | date: 'd. MMMM HH:mm'}}</h1>
+  </ion-header-bar>
+  <ion-content class="has-header weather-detail">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="heading-temperature">{{vm.forecast.main.temp}} °C</h1>
+        <h1 class="heading-weather-description">{{vm.forecast.weather[0].description}}</h1>
+      </div>
+    </div>
+    <div class="weather-details">
+      <div class=row>
+        <div class="col">
+          <p>Cloudiness</p>
+        </div>
+        <div class="col text-right">
+          <p>{{vm.forecast.clouds.all}} %</p>
+        </div>
+      </div>
+      <div class=row>
+        <div class="col">
+          <p>Wind</p>
+        </div>
+        <div class="col-67 text-right">
+          <p>{{vm.forecast.wind.speed}} km/h {{vm.forecast.wind.deg | number:0}}</p>
+        </div>
+      </div>
+      <div class=row>
+        <div class="col">
+          <p>Humidity</p>
+        </div>
+        <div class="col text-right">
+          <p>{{vm.forecast.main.humidity}} %</p>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-pane>

@@ -1,0 +1,46 @@
+
+h2.forecast-list-temperature {
+  font-size: 26px;
+}
+
+p.forecast-list-date {
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+ion-content.weather-detail {
+  padding: 5px;
+}
+
+.button.button-in-footer {
+  margin: 0;
+}
+
+.bar-footer-with-button {
+  padding:0;
+  border-top-width: 0;
+}
+
+h1.heading-temperature {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.heading-location {
+  margin-top: 30px;
+  margin-bottom: 30px
+}
+
+.heading-weather-description {
+  margin-top: 40px;
+  margin-bottom: 40px
+}
+
+.weather-details p{
+  font-size: 18px;
+}
+
+.weather-details .col {
+  margin-left: 15px;
+  margin-right: 15px;
+}

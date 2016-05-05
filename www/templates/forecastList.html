@@ -1,0 +1,27 @@
+<ion-pane>
+  <ion-header-bar class="bar-stable">
+    <h1 class="title">Forecast</h1>
+  </ion-header-bar>
+  <ion-content class="has-header">
+    
+    <ul class="list">
+      <li class="item" ng-repeat="forecast in vm.forecasts" ui-sref="forecastDetail({timestamp: forecast.dt, forecast: forecast})">
+        <div class="row">
+          <div class="col">
+            <h2 class="forecast-list-temperature">{{forecast.main.temp}} °C</h2>
+            <p>{{forecast.weather[0].description}}</p>
+          </div>
+          <div class="col">
+            <p class="text-right forecast-list-date">
+              {{(forecast.dt * 1000) | date: 'dd.MM.yy'}}
+            </p>
+            <p class="text-right forecast-list-date">
+              {{(forecast.dt * 1000) | date: 'HH:mm'}}
+            </p>
+          </div>
+          
+        </div>
+      </li>
+    </ul>
+  </ion-content>    
+</ion-pane>

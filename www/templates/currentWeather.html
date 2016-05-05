@@ -1,0 +1,46 @@
+<ion-pane>
+  <ion-header-bar class="bar-stable">
+    <h1 class="title">Current Weather</h1>
+  </ion-header-bar>
+  <ion-content class="has-header weather-detail">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="heading-temperature">{{vm.temperature}} °C</h1>
+        <h3 class="heading-location">in {{vm.locationName}}</h3>
+        <h1 class="heading-weather-description">{{vm.weatherDescription}}</h1>
+      </div>
+    </div>
+    <div class="weather-details">
+      <div class=row>
+        <div class="col">
+          <p>Cloudiness</p>
+        </div>
+        <div class="col text-right">
+          <p>{{vm.cloudiness}} %</p>
+        </div>
+      </div>
+      <div class=row>
+        <div class="col">
+          <p>Wind</p>
+        </div>
+        <div class="col-67 text-right">
+          <p>{{vm.windSpeed}} km/h {{vm.windDirection}}</p>
+        </div>
+      </div>
+      <div class=row>
+        <div class="col">
+          <p>Humidity</p>
+        </div>
+        <div class="col text-right">
+          <p>{{vm.humidity}} %</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="button button-block button-dark" ui-sref="forecastList">Forecast</button>
+
+  </ion-content>
+  <div class="bar bar-footer bar-footer-with-button">
+    <button class="button button-full button-positive button-in-footer" ng-click="vm.refreshWeatherData()">Refresh</button>
+  </div>
+</ion-pane>
