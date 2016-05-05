@@ -1,6 +1,6 @@
 # WeatherDemo-ionic
 
-A small Ionic app coded during a nutshell at ONE LOGIC (www.onelogic.de) do demonstrate the basics of the Ionic framework:
+A small Ionic app coded during a nutshell at ONE LOGIC (www.onelogic.de) do demonstrate the basics of the Ionic framework.
 
 This app retrieves the current weather conditions for Passau, Germany and displays it on the screen. Additionally, it queries the weather forecast for the next 5 days, displays the forecasts in a list and provides detail information for each forecast.
 
